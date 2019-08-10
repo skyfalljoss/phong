@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="result">
+
+    </div>
+    <script>
+        ////////bai-1-2
+        function inSoLe(length) {
+            var a = '';
+            for (var i = 0; i < length; i++) {
+                if (i % 2 != 0) {
+                    //document.write(i);
+                    a += i + "-";
+                }
+                document.getElementById("result").innerHTML = a;
+            }
+        }
+
+        function inSoLe_2(length) {
+            var i = 0
+            var a = '';
+            while (i < length) {
+                if (i % 2 != 0) {
+                    //document.write(i);
+                    a += i + "<br>";
+                }
+                i++;
+            }
+            document.getElementById("result").innerHTML = a;
+        }
+
+        function inSoLe_3(length) {
+            var a = '';
+            var i = 1;
+            do {
+                if (i % 2 != 0) {
+                    //document.write(i);
+                    a += i + " ";
+                }
+                i++;
+            } while (i < length);
+            document.getElementById("result").innerHTML = a;
+        }
+
+        ///////////////////bai-3
+
+        function SapXep() {
+            var b = [1, 5, 7, 2, 9];
+            // document.write(b.sort());
+            for (var i = 0; i < b.length - 1; i++) {
+                for (var j = i + 1; j < b.length; j++) {
+                    if (b[i] > b[j]) {
+                        var temp;
+                        temp = b[i];
+                        b[i] = b[j];
+                        b[j] = temp;
+                    }
+                }
+            }
+            document.write(b.join());
+        }
+
+
+        //inSoLe(30);
+        //inSoLe_2(50);
+        inSoLe_3(100);
+        SapXep();
+    </script>
+</body>
+
+</html>
