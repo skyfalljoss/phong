@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(./clouds-daylight-environment-462146.jpg);
+    background-position: center; 
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.landing-page{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+} 
+ /* .landing-page::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.326);
+}  */
+.navbar{ 
+    background-color: rgba(0, 0, 0, 0.629);
+    display: flex;
+    justify-content: space-between;
+    color :antiquewhite;
+    padding: 0 50px; 
+    margin: 0px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.navbar .logo h2{
+    font-size: 25px;
+    margin-top: 10;
+}
+.navbar .nav-item{
+    margin-top:20px; 
+    display: flex;
+
+}
+.navbar .nav-item li{
+    list-style-type: none;
+    margin: 5px 10px;
+    font-size: 20px;
+    
+}
+.navbar .nav-item li:nth-child(1){
+    border-bottom: 2px solid antiquewhite;  
+}
+.navbar .nav-item li:hover{
+    border-bottom: 2px solid antiquewhite;
+}
+.navbar .nav-item li a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.navbar .icon a i{
+    margin-top:25px;
+    margin-left: 15px;
+}
+.main{
+    position: absolute;
+    top:40%;
+    left: 20%;
+    color: white ;
+}
+.main p{
+    font-size: 20px;
+    margin: 0px;
+}
+.main h1{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.main .btn{
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
+    padding: 10px 20px;
+}
+.main .btn:hover{
+    background-color: rgba(0, 0, 0, 0.63);
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.landing-page-2{
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 1.842);
+    padding-left: 20vw;
+    display: flex;
+    animation-name: page;
+    animation-duration: 5s 
+}
+@keyframes page{
+    0%{
+        transform:translateY(-30px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+.landing-page-2 .col-1{
+    width: 30%;
+   padding: 30px 0 ; 
+}
+.landing-page-2 .col-1 small{
+    color:	rgb(0, 255, 191);
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.landing-page-2 .col-1 h1{
+    color: 	rgb(0, 255, 191);
+}
+.landing-page-2 .col-2{
+    width: 40%;
+    padding-left: 7vw;
+    padding-top: 17vh;
+}
+.landing-page-2 .col-2 .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.landing-page-2 .col-2 h3{
+    margin: 0;
+    color: 	rgb(0, 255, 191);
+}
+.landing-page-3{
+    height: 70vh;
+    background-image: url(./pexels-photo-994605.jpeg);
+    background-size:cover;
+    background-position: center center;
+}
+.landing-page-3 .opacity{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.616);
+}
+.landing-page-3 .opacity .search {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.landing-page-3 .opacity .search  h1{
+    color: white;
+    margin-left: -250px;
+    margin-bottom: 10px;
+}
+.landing-page-3 .opacity .search form input{
+    width: 250px;
+    background-color: transparent;
+    border: none;
+    border:1px solid white;
+    border-radius: 3px;
+    padding: 10px 10px;
+    outline: none;
+    box-sizing: border-box;
+}
+.landing-page-3 .opacity .search form input:focus{
+    color:white;
+}
+.landing-page-3 .opacity .search form button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 11px 25px;
+    margin-left: 10px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.landing-page-3 .opacity .search form button:hover{
+    background-color: rgb(255, 0, 64); 
+    border: none;
+}
